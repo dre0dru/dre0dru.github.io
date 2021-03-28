@@ -2,7 +2,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
+
 module.exports = withBundleAnalyzer({
+  assetPrefix: ghPages ? '/dre0dru.github.io/' : '',
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   experimental: {
     modern: true,
