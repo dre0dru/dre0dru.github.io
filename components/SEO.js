@@ -14,15 +14,15 @@ export const SEO = {
       {
         url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
         alt: siteMetadata.title,
-        width: 512,
-        height: 512,
+        width: 1200,
+        height: 600,
       },
     ],
   },
   twitter: {
     handle: siteMetadata.twitter,
     site: siteMetadata.twitter,
-    cardType: 'summary',
+    cardType: 'summary_large_image',
   },
   additionalMetaTags: [
     {
