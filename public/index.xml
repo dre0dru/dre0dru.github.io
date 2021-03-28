@@ -7,19 +7,9 @@
       <language>en-us</language>
       <managingEditor>address@yoursite.com (Andrey Skobelev)</managingEditor>
       <webMaster>address@yoursite.com (Andrey Skobelev)</webMaster>
-      <lastBuildDate>Fri, 08 Mar 2019 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 08 Mar 2016 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://dre0dru.github.io//index.xml" rel="self" type="application/rss+xml"/>
       
-  <item>
-    <guid>https://dre0dru.github.io//blog/code-sample-2</guid>
-    <title>Sample .md file 2</title>
-    <link>https://dre0dru.github.io//blog/code-sample-2</link>
-    <description>Example of a markdown file with code blocks and syntax highlighting</description>
-    <pubDate>Fri, 08 Mar 2019 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Andrey Skobelev)</author>
-    <category>markdown</category><category>test</category><category>features</category>
-  </item>
-
   <item>
     <guid>https://dre0dru.github.io//blog/code-sample</guid>
     <title>Sample .md file</title>
