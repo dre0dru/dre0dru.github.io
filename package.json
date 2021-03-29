@@ -9,7 +9,8 @@
     "serve": "next start",
     "analyze": "env ANALYZE=true next build",
     "export": "next build && node ./scripts/generate-sitemap && next export",
-    "serve-static": "npx http-server ./out -a localhost -p 8080"
+    "serve-static": "npx http-server ./out -a localhost -p 8080",
+    "new-post": "node ./scripts/compose.js \"new_post\""
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
