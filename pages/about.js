@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Unity C# developer with 2+ years experience. Proficiency in C# with basic knowledge in
+              Unity programmer with 2+ years experience. In love with C#, some basic knowledge in
               Java, Lua, Js, Html/Css.
             </p>
             <p>Interested in creating robust gameplay logic, working with backend.</p>
