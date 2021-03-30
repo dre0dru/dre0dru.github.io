@@ -11,10 +11,30 @@
       <atom:link href="https://dre0dru.github.io/index.xml" rel="self" type="application/rss+xml"/>
       
   <item>
+    <guid>https://dre0dru.github.io/blog/ecocenter</guid>
+    <title>Ecocenter</title>
+    <link>https://dre0dru.github.io/blog/ecocenter</link>
+    <description>Ecocenter is a space located in the heart of the Gorkinsky-Ometyevsky forest of Kazan, in which children receive important environmental knowledge in an interactive way.</description>
+    <pubDate>Mon, 29 Mar 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Andrey Skobelev)</author>
+    <category>portfolio</category>
+  </item>
+
+  <item>
     <guid>https://dre0dru.github.io/blog/kai-admission-campaign</guid>
     <title>KNITU-KAI admission campaign</title>
     <link>https://dre0dru.github.io/blog/kai-admission-campaign</link>
     <description>Admission campaign for the 2019/2020 school year - augmented reality for the brochure of Kazan National Technical University KNITU-KAI.</description>
+    <pubDate>Mon, 29 Mar 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Andrey Skobelev)</author>
+    <category>portfolio</category>
+  </item>
+
+  <item>
+    <guid>https://dre0dru.github.io/blog/military-museum</guid>
+    <title>Military museum</title>
+    <link>https://dre0dru.github.io/blog/military-museum</link>
+    <description>Augmenting maquettes with digital content in Military Museum situated in Moscow.</description>
     <pubDate>Mon, 29 Mar 2021 00:00:00 GMT</pubDate>
     <author>address@yoursite.com (Andrey Skobelev)</author>
     <category>portfolio</category>
@@ -35,6 +55,16 @@
     <title>Park Tupoley</title>
     <link>https://dre0dru.github.io/blog/park-tupoley</link>
     <description>This application is an augmented reality addition to the interactive exhibition "Park Tupoley", located in the KNITU-KAI campus.</description>
+    <pubDate>Mon, 29 Mar 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Andrey Skobelev)</author>
+    <category>portfolio</category>
+  </item>
+
+  <item>
+    <guid>https://dre0dru.github.io/blog/tu-144</guid>
+    <title>Tu-144</title>
+    <link>https://dre0dru.github.io/blog/tu-144</link>
+    <description>An interactive museum inside legendary supersonic aircraft.</description>
     <pubDate>Mon, 29 Mar 2021 00:00:00 GMT</pubDate>
     <author>address@yoursite.com (Andrey Skobelev)</author>
     <category>portfolio</category>
