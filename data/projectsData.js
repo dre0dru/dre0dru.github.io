@@ -1,11 +1,5 @@
 const projectsData = [
   {
-    title: 'Addressables Services',
-    description: `Unity has great asset management system in a form of Addressables, but to properly leverage all its functionality there is a need for a robust wrapper that carefully handles all operations with proper exceptions reporting and resources cleanup. Here is my reasoning behind creating that kind of wrapper.`,
-    imgSrc: '/static/images/social-banner.png',
-    href: '/blog/addressables-services',
-  },
-  {
     title: 'Tu-144',
     description: `An interactive museum inside legendary supersonic aircraft.`,
     imgSrc: '/static/images/social-banner.png',
