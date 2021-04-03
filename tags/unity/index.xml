@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Dre0Dru personal blog</title>
+      <link>https://dre0dru.github.io/blog</link>
+      <description>Blog about programming and stuff</description>
+      <language>en-us</language>
+      <managingEditor>address@yoursite.com (Andrey Skobelev)</managingEditor>
+      <webMaster>address@yoursite.com (Andrey Skobelev)</webMaster>
+      <lastBuildDate>Sat, 03 Apr 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://dre0dru.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://dre0dru.github.io/blog/addressables-services</guid>
+    <title>Addressables Services for the async/await workflow with UniTask</title>
+    <link>https://dre0dru.github.io/blog/addressables-services</link>
+    <description>Unity has great asset management system in a form of Addressables, but to properly leverage all its functionality there is a need for a robust wrapper that carefully handles all operations with proper exceptions reporting and resources cleanup. Here is my reasoning behind creating that kind of wrapper.</description>
+    <pubDate>Sat, 03 Apr 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Andrey Skobelev)</author>
+    <category>Unity</category><category>Addressables</category><category>UniTask</category>
+  </item>
+
+    </channel>
+  </rss>
