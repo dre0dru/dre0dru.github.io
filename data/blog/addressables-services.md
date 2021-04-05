@@ -16,6 +16,7 @@ There are a lot of things to take care of when working with `Addressables`:
 - Checking `AsyncOperationHandle` statuses.
 - Releasing `AsyncOperationHandle` on operation success/failure.
 - Working with morally deprecated (IMHO) Event-based Asynchronous Pattern that can potentially lead to callback hell.
+- Working with coroutines by yielding `AsyncOperationHandle` without ability to return values from it or use `try catch` blocks.
 - Working with modern and shiny Task-based Asynchronous Pattern that has its own share of problems when working with `Addressables`:
   - `try catch` blocks around `AsyncOperationHandle.Task` does not catch exceptions, you still have to manually check `AsyncOperationHandle.Status` and throw `AsyncOperationHandle.OperationException`:
   ```
@@ -43,13 +44,13 @@ I wanted to create a wrapper for most common `Addressables` operations that solv
 - Compile-time type safety using `AssetReference<T>` for the asset loading operations.
   - Providing generic `IAddressablesLoader<T>` that accepts `AssetReference<T>` only of the same type constraint as its arguments.
 - Ensuring resources are properly loaded and unloaded after they are not needed by separating resources management in two phases:
-  - Preload phase: preload and hold all required resources in `IAddressablesLoader<T>` instance. Use them in sync way during gameplay. It is also possible to load necessary resources whenever you need, but it is better to cleanly define entry point where everything is prepared beforehand.
+  - Preload phase: preload and hold all required resources in `IAddressablesLoader<T>` instance. Use them in sync way during gameplay. It is also possible to load necessary resources whenever you need, but it is better to cleanly define an entry point where everything is prepared beforehand.
   - Unload phase: release and loaded or individual resources from `IAddressablesLoader<T>`, e.g. when switching to another `Scene` with different set of required assets.
   - No need to worry about ref-counts since all references are concentrated in one place and it is impossible to load something twice or use asset that was not preloaded before.
-- Project independence. Package can be used in almost any projects, it has a small codebase with possibility to extend it further when needs arise.
+- Project independence. Package can be used in almost every project, it has a small codebase with the possibility to extend it further when needs arise.
 
 ## Result
 
-[Addressables Services](https://github.com/dre0dru/AddressablesServices) is the open-source Unity package that provides essential functionality for worry-free usage of `Addressables` in safe and predictable manner.
+[Addressables Services](https://github.com/dre0dru/AddressablesServices) is the open-source Unity package that provides essential functionality for the worry-free usage of `Addressables` in safe and predictable manner.
 
 You can read more about usage and installation on [GitHub](https://github.com/dre0dru/AddressablesServices).
