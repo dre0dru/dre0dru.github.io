@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>address@yoursite.com (Andrey Skobelev)</managingEditor>
       <webMaster>address@yoursite.com (Andrey Skobelev)</webMaster>
-      <lastBuildDate>Sat, 03 Apr 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 08 May 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://dre0dru.github.io/index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://dre0dru.github.io/blog/local-storage</guid>
+    <title>Local Storage - a set of utility classes for managing local data stored on device</title>
+    <link>https://dre0dru.github.io/blog/local-storage</link>
+    <description>Sometimes there is a need arises for saving data locally on a device, be it server data caching, managing game progress for offline games, or storing user preferences. First, you write necessary data in plain text, then you switch to JSON for readability, after that you want to protect your files from curious users. Next time you notice that your data takes too much space on a device, so you want to compress your data. The improvement process can go indefinitely, so here is my take on solving that kind of problems.</description>
+    <pubDate>Sat, 08 May 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Andrey Skobelev)</author>
+    <category>Unity</category><category>Data Management</category>
+  </item>
+
   <item>
     <guid>https://dre0dru.github.io/blog/addressables-services</guid>
     <title>Addressables Services for the async/await workflow with UniTask</title>
