@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: 'Local Storage',
+    description: `Sometimes there is a need arises for saving data locally on a device, be it server data caching, managing game progress for offline games, or storing user preferences.`,
+    imgSrc: '/static/images/social-banner.png',
+    href: '/blog/local-storage',
+  },
+  {
     title: 'Addressables Services',
     description: `Unity has great asset management system in a form of Addressables, but to properly leverage all its functionality there is a need for a robust wrapper that carefully handles all operations with proper exceptions reporting and resources cleanup. Here is my reasoning behind creating that kind of wrapper.`,
     imgSrc: '/static/images/social-banner.png',

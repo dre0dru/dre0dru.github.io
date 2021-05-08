@@ -22,16 +22,16 @@ There are a lot of things to take care of when working with `Addressables`:
   ```
   try
   {
-  var asyncOp = Addressables.LoadAssetAsync<Sprite>(InvalidSpriteAssetReference);
-  Sprite result = await asyncOp.Task;
+      var asyncOp = Addressables.LoadAssetAsync<Sprite>(InvalidSpriteAssetReference);
+      Sprite result = await asyncOp.Task;
   }
   //If any error occurs during async operation it won't be caught by catch block
   catch (Exception e)
   {
-  Debug.LogError($"Error during asset loading: {e}");
+      Debug.LogError($"Error during asset loading: {e}");
   }
   ```
-  - When `Addressables` profiler events sending is enabled there always will be `UnityException` when awaiting `AsyncOperationHandle.Task` (dunno why, btw).
+  - When `Addressables` profiler events sending is enabled there always will be `UnityException` when awaiting `AsyncOperationHandle.Task` (Unity still can't fix it :( ).
 - No compile-time type safety when using some of the `Addressables` API. For example, `Addressables.LoadAssetAsync<Sprite>(AssetKey)` expects `object` or `IResourceLocation` as its argument, but there is absolutely no guarantee that there will `Sprite` by that asset key.
 - Managing resources reference counts. It seems like pretty easy task, but ensuring that all unused assets are unloaded automatically by relying on `Addressables` reference-counting can become daunting work when assets are loaded from here and there during application lifecycle.
 
