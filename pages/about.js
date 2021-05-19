@@ -41,6 +41,10 @@ export default function About() {
               Java, Lua, Js, Html/Css.
             </p>
             <p>Interested in creating robust gameplay logic, working with backend.</p>
+            <p>
+              Hugely inspired by <a href={'https://cysharp.co.jp/en/'}>Cysharp</a> company and their
+              mission to empower C# ecosystem in gaming industry.
+            </p>
           </div>
         </div>
       </div>

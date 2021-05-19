@@ -15,13 +15,16 @@ My first attempt was the creation of an inheritance hierarchy where each next in
 
 # How?
 
-Since inheritance doesn't work, what options do we have? Composition, and to be more precise - decorator pattern. The basic idea is following:
+Since inheritance doesn't work, what options do we have? Composition, and to be more precise - `decorator` pattern. The basic idea is following:
 
-- Separate and abstract two processes: serialization/deserialization and saving/loading.
+- Separate and abstract three processes: serialization/deserialization, saving/loading and data transformation.
   - `ISerializationProvider` for serialization and deserialization. It can be any format that suits one's need, e.g. plain text, JSON, binary, XML.
-  - `IFileProvider` for saving and loading. Abstracting data read/write process to allow data preprocessing steps.
-- Create one generic class that can accept any combination of `ISerializationProvider` and `IFileProvider` for managing data in a uniform way across the solution.
-  - `IStorage` implementations that accept aforementioned interfaces in the constructor and use them for data saving/loading with few utility methods like deleting files and checking for existence.
+  - `IDataTransform` for applying optional data transformations during serialization/deserialization, e.g. data encryption or compression.
+  - `IFileStorage` with for saving and loading data to disk on device.
+  - `IPlayerPrefsStorage` for saving and loading data to [Unity](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) `PlayerPrefs`.
+- `IFileStorage` and `IPlayerPrefsStorage` are just `facade` for `ISerializationProvider` with few utility methods corresponding their purpose:
+  - `IFileStorage` provides API for working with file system on device.
+  - `IPlayerPrefsStorage` provides API for working with `PlayerPrefs`. Basically, it mirrors `PlayerPrefs` API, but adds ability to save generic data to `PlayerPrefs` without need to manually convert it to string representation.
 
 My main inspiration was how `Stream` API implemented in `c#` where some streams will use underlying streams passed in its constructor.
 
